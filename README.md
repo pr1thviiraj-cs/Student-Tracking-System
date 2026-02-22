@@ -50,4 +50,4 @@ CGPA = Average of grade points across all subjects.
 
 ---
 
-## 📂 Project Structure
+
