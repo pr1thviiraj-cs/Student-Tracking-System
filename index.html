@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Student Tracker</title>
+
+  <link rel="stylesheet" href="style.css">
+
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;600;800&display=swap" rel="stylesheet">
+</head>
+
+<body>
+
+<div class="container">
+
+  <h1>Student Tracker</h1>
+
+  <div class="top">
+    <input id="studentName" placeholder="Student name">
+    <button id="addBtn">Add</button>
+    <button id="themeToggle">Dark Mode</button>
+  </div>
+
+  <table>
+    <thead>
+      <tr>
+        <th>Name</th>
+        <th>Attendance</th>
+        <th>Math</th>
+        <th>Physics</th>
+        <th>Chem</th>
+        <th>English</th>
+        <th>CS</th>
+        <th>CGPA</th>
+        <th>Action</th>
+      </tr>
+    </thead>
+
+    <tbody id="studentBody"></tbody>
+  </table>
+
+</div>
+
+<script src="script.js"></script>
+</body>
+</html>

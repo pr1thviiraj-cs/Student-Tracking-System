@@ -1,0 +1,113 @@
+/* 🌍 BASE BODY */
+body{
+  font-family: Inter, sans-serif;
+  margin: 0;
+  padding: 20px;
+  transition: 0.4s;
+
+  background:
+  linear-gradient(rgba(0,0,0,0.45), rgba(0,0,0,0.45)),
+  url("https://images.unsplash.com/photo-1522202176988-66273c2fd55f")
+  no-repeat center center/cover;
+}
+
+/* 🌙 DARK MODE BACKGROUND */
+.dark{
+  background:
+  linear-gradient(rgba(0,0,0,0.75), rgba(0,0,0,0.75)),
+  url("https://images.unsplash.com/photo-1522202176988-66273c2fd55f")
+  no-repeat center center/cover;
+
+  color: #ffffff;
+}
+
+/* 📦 MAIN CONTAINER */
+.container{
+  max-width: 1100px;
+  margin: auto;
+  background: rgba(58, 105, 105, 0.8); /* 20% transparent */
+  padding: 20px;
+  border-radius: 12px;
+
+  backdrop-filter: blur(10px);
+  transition: 0.4s;
+}
+
+/* 🌙 DARK CONTAINER */
+.dark .container{
+  background: rgba(105, 58, 60, 0.85);
+}
+
+/* 🏷 TITLE */
+.container h1{
+  text-align: center;
+  margin-bottom: 20px;
+}
+
+/* 🔝 TOP CONTROLS */
+.top{
+  margin-bottom: 15px;
+}
+
+/* 🔘 BUTTONS */
+button{
+  padding: 8px 14px;
+  margin: 3px;
+  cursor: pointer;
+  border: none;
+  border-radius: 6px;
+  transition: 0.3s;
+}
+
+/* ACTIVE DARK MODE BUTTON */
+#themeToggle.active{
+  background: #ffffff;
+  color: #121212;
+  font-weight: 600;
+}
+
+/* 🌙 BUTTON STYLE IN DARK */
+.dark #themeToggle.active{
+  background: #00c896;
+  color: white;
+}
+
+/* 🧾 INPUTS */
+input{
+  padding: 6px;
+  width: 70px;
+  border-radius: 5px;
+  border: none;
+}
+
+.top input{
+  width: 200px;
+}
+
+/* 📊 TABLE */
+table{
+  width: 100%;
+  border-collapse: collapse;
+  margin-top: 10px;
+}
+
+th, td{
+  padding: 10px;
+  text-align: center;
+}
+
+/* LIGHT MODE TABLE BORDER */
+th, td{
+  border-bottom: 1px solid rgba(0,0,0,0.15);
+}
+
+/* DARK MODE TABLE BORDER */
+.dark th, 
+.dark td{
+  border-bottom: 1px solid rgba(255,255,255,0.2);
+}
+
+/* HOVER EFFECT */
+tr:hover{
+  background: rgba(255,255,255,0.1);
+}
